@@ -3,13 +3,15 @@ title: "Getting started with layout-based extractions"
 description: "In this tutorial, you'll learn to extract data out of a set of similar documents using a layout-based query language, SenseML. You'll write JSON to tell Sensible about which data to extract from an example document, using what you know about the layout of the document. SenseML uses a mix of techniques, including machine learning, heuristics, and rules, to extract your target information."
 ---
 
-TEST  You can then save your descriptions as a "config." Publish your config to automate extracting from similar documents. 
+```typescript
+import MySnippet from '/snippets/snippet1.mdx';
+```
 
-Use this tutorial if you want a guided tour of SenseML concepts and the Sensible app. Or see the following links:
+here's a snippet:
 
-* SenseML is for advanced config authoring. For a simpler authoring experience, use Sensible Instruct. For more information about SenseML versus Sensible Instruct, see [Choosing extraction strategy](/docs/author). For authoring in Sensible Instruct, see [Getting started](/docs/getting-started-ai).
-* If you instead want to explore without much explanation, then [sign up](https://app.sensible.so/register) for an account and check out our interactive in-app tutorials in the `sensible_instruct_basics` document type.
-* If you want a quick "hello world" API response, see the [API quickstart](/docs/quickstart).
+<snippet1/>
+
+
 
 ## Get structured data from an auto insurance quote
 
@@ -41,7 +43,7 @@ If you can write basic SQL queries, you can write SenseML queries. SenseML shiel
 | Example document | [Download link](https://github.com/sensible-hq/sensible-docs/raw/main/readme-sync/assets/v0/pdfs/auto%5Finsurance%5Fanyco.pdf) |  
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |  
    1. As the following screenshot shows, click the **auto\_insurance\_quote** document type you created, click the **Reference documents** tab, and click **Upload document**:  
-   ![Click to enlarge](/images/quickstart_upload_doc.png)  
+      ![Click to enlarge](/images/quickstart_upload_doc.png)  
    2. In the file upload dialog, choose the generic car insurance quote you downloaded in a previous step.
 2. To create a configuration for your document type, take the following steps:  
    1. In your **auto\_insurance\_quote** document type, click the **Configurations** tab.  
@@ -405,7 +407,7 @@ Before integrating the config with an application and writing [validation tests]
 | auto\_insurance\_anyco\_2 | [Download link](https://github.com/sensible-hq/sensible-docs/blob/main/readme-sync/assets/v0/pdfs/auto%5Finsurance%5Fanyco%5F2.pdf) |  
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 2. Click the **anyco** config, select the "auto\_insurance\_anyco\_2" document, and look at the output. Unlike the first document, the policy period takes up two lines, so Sensible misses the end year (2021):  
-  
+
 ```JSON JSON
 {  
   "policy_period": {  
