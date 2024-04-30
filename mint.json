@@ -53,9 +53,9 @@
         {
             "group": "Layout-based Extractions",
             "pages": [
-                "getting-started-with-layout-based-extractions",
-                "out-of-the-box-extractions",
-                "multi-document-extractions"                
+                "layout-based-extractions/getting-started-with-layout-based-extractions",
+                "layout-based-extractions/out-of-the-box-extractions",
+                "layout-based-extractions/multi-document-extractions"                
             ]
         },
         {
