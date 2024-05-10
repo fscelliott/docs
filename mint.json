@@ -57,10 +57,7 @@
                 "layout-based-extractions/getting-started",
                 "layout-based-extractions/out-of-the-box-extractions",
 
-                {
-                "group": "Nested Reference Pages",
-                "pages": ["layout-based-extractions/nest/multi-document-extractions"]
-                 }
+            
 
 
 
